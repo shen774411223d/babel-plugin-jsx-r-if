@@ -1,12 +1,24 @@
 {
   "name": "babel-plugin-jsx-r-if",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node_modules/.bin/mocha --compilers js:babel-core/register --reporter spec",
+    "build": "node_modules/.bin/babel -d dist index.js"
   },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
-  "author": "",
-  "license": "ISC"
+  "author": "shenxiaotian",
+  "repository": "shen774411223d/babel-plugin-jsx-r-if",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.4.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.4.0",
+    "babel-plugin-transform-react-jsx": "^6.4.0",
+    "babel-preset-es2015": "^6.3.13",
+    "chai": "^3.3.0",
+    "js-beautify": "^1.5.10",
+    "mocha": "^2.3.3"
+  }
 }
