@@ -1,31 +1,5 @@
-### 众所周知在React中并没有像Vue那么多的API，所有功能都要依托于原生JS去实现。这一篇我给大家分享两种封装v-if的方法
-- ##### v-for正在撸...敬请期待
-- ##### 通过React来封装Condition组件
-    - 简单封装了React组件。优点是可读性高；缺点是使用不方便
-    ```
-        import React, { Component } from 'react';
-        import PropTypes from 'prop-types';
-        
-        class Condition extends Component {
-          render() {
-            return this.props['r-if']? this.props.children : null;
-          }
-          // 核心思想是通过props来控制组件渲染，为true时渲染children
-        }
-        
-        Render.propTypes = {
-          ['r-if']: PropTypes.bool
-        };
-        
-        export default Render;
-    ```
-    ```
-        //使用
-        <Condition r-if = { this.state.show }>
-          <div>hello</div>
-        </Condition>
-    ```
-    
+### jsx-r-if
+
 - ##### 通过babel中AST来修改element
     - 现代框架（vue，react）渲染阶段：各种loader将vue/jsx文件转换为js文件 => babel接手将js文件转译成浏览器可识别代码 => webpack打包 => 浏览器运行（Vue/React将js代码抽象成VNODE（虚拟DOM））
       
@@ -127,10 +101,4 @@
         */
     ```
     
-- 各位看官还可以看看我的 [React-demo](https://github.com/shen774411223d/React-demo) 基于React V16.x和React-Router V4.x。基本涵盖的React开发中基本功能
-- 因为babel本来就比较难懂，写的可能不是很清楚大家见谅哈～
 - 源码地址：[我的github](https://github.com/shen774411223d/book)
- 
-
-
-
