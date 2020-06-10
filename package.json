@@ -7,6 +7,16 @@
     "test": "node_modules/.bin/mocha --compilers js:babel-core/register --reporter spec",
     "build": "node_modules/.bin/babel -d dist index.js"
   },
+  "keywords": [
+    "babel",
+    "plugin",
+    "jsx",
+    "react",
+    "ng-if",
+    "display-if",
+    "conditional",
+    "react-component"
+  ],
   "author": "shenxiaotian",
   "repository": "shen774411223d/babel-plugin-jsx-r-if",
   "license": "ISC",
