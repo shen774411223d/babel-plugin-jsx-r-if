@@ -9,6 +9,7 @@
   },
   "author": "shenxiaotian",
   "repository": "shen774411223d/babel-plugin-jsx-r-if",
+  "homepage": "https://github.com/shen774411223d/babel-plugin-jsx-r-if#readme",
   "license": "ISC",
   "dependencies": {
     "babel-core": "^6.4.0"
