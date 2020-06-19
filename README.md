@@ -94,11 +94,6 @@
                 }
             }
         }
-
-        /* 
-        PS：上面的变量不用记忆，只是react组件在AST中的称呼。需要手撸babel插件时打开https://astexplorer.net/ 对照即可。
-        
-        */
     ```
     
 - 源码地址：[我的github](https://github.com/shen774411223d/book)
