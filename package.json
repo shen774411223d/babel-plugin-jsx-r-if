@@ -1,7 +1,7 @@
 {
   "name": "babel-plugin-jsx-r-if",
   "version": "1.0.2",
-  "description": "",
+  "description": "Vue中的v-if在jsx中的模拟实现",
   "main": "dist/index.js",
   "scripts": {
     "test": "node_modules/.bin/mocha --compilers js:babel-core/register --reporter spec",
@@ -12,7 +12,8 @@
     "plugin",
     "jsx",
     "react",
-    "ng-if",
+    "vue",
+    "v-if",
     "display-if",
     "conditional",
     "react-component"
