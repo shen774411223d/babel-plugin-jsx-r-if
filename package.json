@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-jsx-r-if",
-  "version": "1.0.2",
+  "version": "1.0.3-0",
   "description": "Vue中的v-if在jsx中的模拟实现",
   "main": "dist/index.js",
   "scripts": {
